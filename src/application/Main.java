@@ -21,7 +21,7 @@ public class Main extends Application {
 			
 			Scene scene = new Scene(root,400,400);
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("Elevator Control Panel");
+			primaryStage.setTitle("Jason's Elevator Project");
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
