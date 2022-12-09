@@ -15,9 +15,9 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader();
-			VBox root = loader.load(new FileInputStream("src/application/ElevatorPanelView.fxml"));
-			ElevatorPanelController controller = (ElevatorPanelController)loader.getController();
-			controller.applicationStage = primaryStage;
+			VBox root = loader.load(new FileInputStream("src/application/ElevatorFloorControl.fxml"));
+//			ElevatorFloorController controller = (ElevatorFloorController)loader.getController();
+//			controller.applicationStage = primaryStage;
 			
 			Scene scene = new Scene(root,400,400);
 			primaryStage.setScene(scene);
