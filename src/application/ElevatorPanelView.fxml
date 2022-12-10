@@ -1,16 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ElevatorPanelController">
    <children>
-      <VBox prefHeight="200.0" prefWidth="100.0">
+      <VBox prefHeight="600.0" prefWidth="250.0">
          <children>
-            <Button mnemonicParsing="false" text="Button" />
+            <HBox prefHeight="100.0" prefWidth="500.0">
+               <children>
+                  <Button fx:id="buttonOne" mnemonicParsing="false" onAction="#selectFloorOne" prefHeight="77.0" prefWidth="87.0" text="1">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="12.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="500.0">
+               <children>
+                  <Button fx:id="buttonTwo" mnemonicParsing="false" onAction="#selectFloorTwo" prefHeight="77.0" prefWidth="87.0" text="2">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="12.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="473.0">
+               <children>
+                  <Button fx:id="buttonThree" mnemonicParsing="false" onAction="#selectFloorThree" prefHeight="77.0" prefWidth="87.0" text="3">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="12.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="500.0">
+               <children>
+                  <Button fx:id="buttonFour" mnemonicParsing="false" onAction="#selectFloorFour" prefHeight="77.0" prefWidth="87.0" text="4">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="12.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="500.0">
+               <children>
+                  <Button fx:id="buttonFive" mnemonicParsing="false" onAction="#selectFloorFive" prefHeight="77.0" prefWidth="87.0" text="5">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="12.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
          </children>
       </VBox>
+      <Button alignment="TOP_RIGHT" layoutX="225.0" layoutY="132.0" mnemonicParsing="false" onAction="#goUp" text="Go Up">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="TOP_RIGHT" layoutX="222.0" layoutY="340.0" mnemonicParsing="false" onAction="#goDown" text="Go Down">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="currentFloorLabel" layoutX="3.0" layoutY="494.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="466.0" text="Please select a floor">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
-</HBox>
+</AnchorPane>
